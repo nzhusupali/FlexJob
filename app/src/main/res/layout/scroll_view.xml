@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="4dp"
+        android:layout_y="52dp"
+        tools:showIn="@layout/activity_main">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sample2"
+                style="@style/scroll_view_icons"
+                android:src="@drawable/ic_cook" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sample3"
+                style="@style/scroll_view_icons"
+                android:src="@drawable/ic_seller" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sample4"
+                style="@style/scroll_view_icons"
+                android:src="@drawable/ic_welder" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sample5"
+                style="@style/scroll_view_icons"
+                android:src="@drawable/ic_loader" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sample6"
+                style="@style/scroll_view_icons"
+                android:src="@drawable/ic_person" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sample7"
+                style="@style/scroll_view_icons"
+                android:src="@drawable/ic_vk" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</merge>

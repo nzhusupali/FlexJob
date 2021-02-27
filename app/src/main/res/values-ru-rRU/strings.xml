@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlexJob</string>
+
+    <string name="sign_in" >Войти</string>
+    <string name="register_d" >Регистрация</string>
+    <string name="find_d" >Найдите работу по вашему вкусу</string>
+    <string name="main" >Главное</string>
+    <string name="add" >Добавить объявление</string>
+    <string name="settings">настройки</string>
+    <string name="password">Пароль</string>
+    <string name="message" >Сообщения</string>
+    <string name="loginEnter" >Введите логин</string>
+    <string name="passwordEnter" >Введите пароль</string>
+    <string name="forgotPassword" >ЗАБЫЛИ ПАРОЛЬ ?</string>
+    <string name="findWork">Найти работу</string>
+    <string name="login">Логин</string>
+    <string name="emailOrPhoneNumber">Введите электронную почту или номер телефона</string>
+    <string name="e_mail">Электронная почта</string>
+
+
+
+    <!--    login_activity  -->
+    <string name="have_an_account">Нужен аккаунт ?</string>
+    <string name="loginTghr">Войти через</string>
+
+    <!--    login activity end-->
+
+    <!--    SCROLL BAR  -->
+    <string name="loader" >Грузчик</string>
+    <!--    SCROLL BAR  -->
+</resources>

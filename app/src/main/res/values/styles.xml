@@ -1,0 +1,60 @@
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background">@color/background</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:elevation">4dp</item>
+
+
+        <item name="font">@font/futura_light</item>
+    </style>
+
+    <style name="CustomTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="navigation_menu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_x">-1dp</item>
+        <item name="android:layout_y">668dp</item>
+    </style>
+
+    <style name="scroll_view_icons">
+        <item name="android:clickable">true</item>
+        <item name="background">@drawable/ripple_effect</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="ET_login_activity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/BlackColor</item>
+        <item name="android:layout_marginStart">@dimen/basic_margin</item>
+        <item name="android:layout_marginEnd">@dimen/basic_margin</item>
+        <item name="android:background">@color/grey</item>
+        <item name="android:fontFamily">@font/futura_light</item>
+        <item name="android:padding">@dimen/basic_margin</item>
+    </style>
+
+    <style name="Text_login_activity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/futura_light</item>
+        <item name="android:textColor">@color/BlackColor</item>
+        <item name="android:textSize">@dimen/large_text</item>
+
+    </style>
+</resources>

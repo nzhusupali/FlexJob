@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E13925</color>
+    <color name="colorPrimaryDark">#757575</color>
+    <color name="colorAccent">#F3F3F3</color>
+    <color name="background">#F3F3F3</color>
+
+    <color name="ripple_effect_color"></color>
+    <color name="Gray">#E8E6E6</color>
+    <color name="grey">#D2D2D2</color>
+    <color name="NavMenucolor">#757575</color>
+    <color name="NavMenuColor2">#E13925</color>
+    <color name="BlackColor">#000000</color>
+    <color name="WhiteColor">#FFFFFF</color>
+    <color name="IconColor">#D93724</color>
+
+
+
+</resources>
+

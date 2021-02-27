@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "749884958913",
+    "project_id": "project-work-96db8",
+    "storage_bucket": "project-work-96db8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749884958913:android:8374fd7d5e487f2ec04c40",
+        "android_client_info": {
+          "package_name": "com.example.FlexJob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749884958913-p4eoll70jkut1m6v48evm1jv9cvo1ssg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.FlexJob",
+            "certificate_hash": "8f06147a504f78b9f0556d0037a380fa40f49d64"
+          }
+        },
+        {
+          "client_id": "749884958913-3ouabkc9oe0iodpulvh90nj35f64uhq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo-z_u3D2NqaezSxG_icqdp81GDn5_Zj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749884958913-3ouabkc9oe0iodpulvh90nj35f64uhq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

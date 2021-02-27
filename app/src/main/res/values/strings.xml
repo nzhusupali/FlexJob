@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlexJob</string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="register_d">Registration</string>
+
+    <string name="find_d">Find a job to your liking</string>
+    <string name="main">Main</string>
+    <string name="add">Add AD</string>
+    <string name="settings">settings</string>
+    <string name="password">Password</string>
+    <string name="message">Message</string>
+    <string name="loginEnter">Enter your login</string>
+    <string name="passwordEnter">Enter your password</string>
+    <string name="forgotPassword">Forgot your password ?</string>
+    <string name="findWork">Find work</string>
+    <string name="login">Login</string>
+    <string name="emailOrPhoneNumber">Enter your email or phone number</string>
+    <string name="e_mail">E-mail</string>
+
+    <!--    login_activity  -->
+    <string name="have_an_account">Have an account ?</string>
+    <string name="loginTghr">login in through</string>
+    <!--    login activity end-->
+
+    <!--    SCROLL BAR  -->
+    <string name="loader">Loader</string>
+    <!--    SCROLL BAR END-->
+</resources>
