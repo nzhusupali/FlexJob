@@ -14,8 +14,10 @@
         android:background="@color/WhiteColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563">
 
         <TextView
             android:id="@+id/text_login_activity_login"
@@ -34,13 +36,13 @@
             android:id="@+id/ET_login_activity_login"
             style="@style/ET_login_activity"
             android:layout_marginTop="108dp"
+            android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:inputType="textEmailAddress"
-            android:autofillHints="" />
-
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
         <TextView
             android:id="@+id/text_password_activity_login"
             style="@style/Text_login_activity"
@@ -57,23 +59,24 @@
             style="@style/ET_login_activity"
             android:layout_marginTop="36dp"
             android:autofillHints="password"
+            tools:ignore="LabelFor"
+            android:inputType="textVisiblePassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ET_login_activity_login"
-            android:inputType="textVisiblePassword" />
+            app:layout_constraintTop_toBottomOf="@+id/ET_login_activity_login" />
 
         <Button
             android:id="@+id/BTN_login_activity_login"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="285dp"
             android:layout_marginBottom="162dp"
             android:layout_x="104dp"
             android:layout_y="275dp"
             android:background="@color/colorPrimary"
-            android:text="@string/login"
             android:fontFamily="@font/futura_light"
+            android:text="@string/login"
             android:textColor="@color/WhiteColor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -122,10 +125,11 @@
             android:layout_height="@dimen/ic_size"
             android:layout_marginTop="16dp"
             android:src="@drawable/ic_google"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintEnd_toStartOf="@+id/BTN_login_facebook_activity_login"
+            app:layout_constraintHorizontal_bias="0.519"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_logTghr_activity_login" />
+            app:layout_constraintTop_toBottomOf="@+id/text_logTghr_activity_login"
+            android:contentDescription="@string/logo" />
 
         <TextView
             android:id="@+id/text_HaveAcc_activity_login"
@@ -142,6 +146,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/BTN_login_facebook_activity_login"
+            android:layout_width="@dimen/ic_size"
+            android:layout_height="@dimen/ic_size"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_facebook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.643"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_logTghr_activity_login" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
