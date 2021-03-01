@@ -3,7 +3,6 @@ package com.example.flexJob
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.facebook.AccessToken
@@ -116,15 +115,15 @@ class LoginActivity : AppCompatActivity() {
 
         // initialize the firebaseAuth variable
         FirebaseAuth.getInstance()
-        Sign_login_activity.setOnClickListener{
+        Sign_Google_register_activity.setOnClickListener{
             signInGoogle()
         }
         /** There End Google auth ...*/
 
         /** There start Facebook auth firebase*/
         callBackManager = CallbackManager.Factory.create()
-        BTN_login_facebook_activity_login.setReadPermissions("email")
-        BTN_login_facebook_activity_login.setOnClickListener {
+        Sign_facebook_register_activity.setReadPermissions("email")
+        Sign_facebook_register_activity.setOnClickListener {
             signin()
         }
         /** There end Facebook auth firebase*/
@@ -186,7 +185,7 @@ class LoginActivity : AppCompatActivity() {
 
     /** Facebook Auth Firebase Started*/
     private fun signin() {
-        BTN_login_facebook_activity_login.registerCallback(callBackManager, object :
+        Sign_facebook_register_activity.registerCallback(callBackManager, object :
             FacebookCallback<LoginResult> {
             override fun onSuccess(result: LoginResult?) {
                 handleFaceBookAccessToken(result!!.accessToken)

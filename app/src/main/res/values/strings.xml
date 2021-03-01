@@ -31,6 +31,7 @@
     <string name="facebook_app_id" translatable="false">175463684151031</string>
     <string name="fb_login_protocol_scheme" translatable="false">fb175463684151031</string>
     <string name="logo" translatable="false">Logo</string>
+    <string name="next_button" translatable="false">next Button</string>
 
     <!--    Facebook End-->
 </resources>

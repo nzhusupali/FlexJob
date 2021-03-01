@@ -42,7 +42,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:importantForAutofill="no"
-            tools:ignore="LabelFor" />
+            android:hint="@string/login"
+            android:labelFor="@id/text_login_activity_login"
+            />
         <TextView
             android:id="@+id/text_password_activity_login"
             style="@style/Text_login_activity"
@@ -59,7 +61,8 @@
             style="@style/ET_login_activity"
             android:layout_marginTop="36dp"
             android:autofillHints="password"
-            tools:ignore="LabelFor"
+            android:hint="@string/password"
+            android:labelFor="@id/text_password_activity_login"
             android:inputType="textVisiblePassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -120,12 +123,12 @@
             app:layout_constraintTop_toBottomOf="@+id/BTN_login_activity_login" />
 
         <ImageView
-            android:id="@+id/Sign_login_activity"
+            android:id="@+id/Sign_Google_register_activity"
             android:layout_width="@dimen/ic_size"
             android:layout_height="@dimen/ic_size"
             android:layout_marginTop="16dp"
             android:src="@drawable/ic_google"
-            app:layout_constraintEnd_toStartOf="@+id/BTN_login_facebook_activity_login"
+            app:layout_constraintEnd_toStartOf="@+id/Sign_facebook_register_activity"
             app:layout_constraintHorizontal_bias="0.519"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_logTghr_activity_login"
@@ -148,7 +151,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <com.facebook.login.widget.LoginButton
-            android:id="@+id/BTN_login_facebook_activity_login"
+            android:id="@+id/Sign_facebook_register_activity"
             android:layout_width="@dimen/ic_size"
             android:layout_height="@dimen/ic_size"
             android:layout_marginTop="24dp"

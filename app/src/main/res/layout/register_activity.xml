@@ -16,12 +16,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611">
 
 
         <TextView
-            android:layout_marginTop="40dp"
             style="@style/Text_login_activity"
+            android:layout_marginTop="40dp"
             android:text="@string/register_d"
             android:textSize="@dimen/title_text"
             app:layout_constraintEnd_toEndOf="parent"
@@ -30,12 +31,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/text_login_activity_register"
             style="@style/Text_login_activity"
-            android:layout_marginTop="156dp"
+            android:layout_marginTop="120dp"
             android:text="@string/e_mail"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.071"
+            app:layout_constraintHorizontal_bias="0.123"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,16 +44,18 @@
             android:id="@+id/ET_email_register_activity"
             style="@style/ET_login_activity"
             android:layout_marginTop="3dp"
+            android:hint="@string/login"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:labelFor="@+id/text_login_activity_register"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            android:autofillHints=""
-            android:inputType="textEmailAddress" />
+            app:layout_constraintTop_toBottomOf="@+id/text_login_activity_register" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/text_password_activity_register"
             style="@style/Text_login_activity"
-            android:layout_marginTop="248dp"
+            android:layout_marginTop="212dp"
             android:text="@string/password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.099"
@@ -63,23 +66,70 @@
             android:id="@+id/ET_password_register_activity"
             style="@style/ET_login_activity"
             android:layout_marginTop="2dp"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            android:importantForAutofill="no"
-            android:inputType="textPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/text_password_activity_register" />
 
         <ImageButton
             android:id="@+id/BTN_next_email_pass_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="405dp"
             android:layout_marginBottom="16dp"
             android:background="@color/WhiteColor"
+            android:contentDescription="@string/next_button"
             android:src="@drawable/ic_next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.906"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_logTghr_activity_login"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginBottom="160dp"
+            android:layout_x="94dp"
+            android:layout_y="364dp"
+            android:fontFamily="@font/futura_light"
+            android:text="@string/loginTghr"
+            android:textColor="@color/BlackColor"
+            android:textSize="@dimen/small_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ET_password_register_activity"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/Sign_Google_register_activity"
+            android:layout_width="@dimen/ic_size"
+            android:layout_height="@dimen/ic_size"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/ic_google"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_logTghr_activity_login"
+            app:layout_constraintVertical_bias="0.294" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/Sign_facebook_register_activity"
+            android:layout_width="@dimen/ic_size"
+            android:layout_height="@dimen/ic_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toEndOf="@+id/Sign_Google_register_activity"
+            app:layout_constraintTop_toBottomOf="@+id/text_logTghr_activity_login"
+            app:layout_constraintVertical_bias="0.333" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
