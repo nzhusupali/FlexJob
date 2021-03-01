@@ -24,9 +24,11 @@
     <string name="have_an_account">Нужен аккаунт ?</string>
     <string name="loginTghr">Войти через</string>
 
-    <!--    login activity end-->
+    <!--    Forgot pass activity    -->
+    <string name="password_retrieval">Восстановление пароля</string>
+    <string name="text_recover_pass">Введите Ваш электронный адрес, чтобы сбросить пароль</string>
+    <string name="reset_password">Сброс пароля</string>
 
     <!--    SCROLL BAR  -->
     <string name="loader" >Грузчик</string>
-    <!--    SCROLL BAR  -->
 </resources>

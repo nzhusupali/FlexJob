@@ -23,9 +23,12 @@
     <string name="have_an_account">Have an account ?</string>
     <string name="loginTghr">login in through</string>
 
-    <!--    login activity end-->
+    <!--    Forgot pass activity    -->
+    <string name="password_retrieval">Password retrieval</string>
+    <string name="text_recover_pass">Enter your email address to reset your password</string>
+    <string name="reset_password">Reset password</string>
+
 
     <!--    SCROLL BAR  -->
     <string name="loader">Loader</string>
-    <!--    SCROLL BAR END-->
 </resources>

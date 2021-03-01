@@ -21,17 +21,15 @@
 
 
         <TextView
-            style="@style/Text_login_activity"
-            android:layout_marginTop="40dp"
+            style="@style/headWords"
+            android:layout_marginTop="56dp"
             android:text="@string/register_d"
-            android:textSize="@dimen/title_text"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.509"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/text_login_activity_register"
+            android:id="@+id/text_login_forget_pass_activity"
             style="@style/Text_login_activity"
             android:layout_marginTop="120dp"
             android:text="@string/e_mail"
@@ -44,13 +42,13 @@
             android:id="@+id/ET_email_register_activity"
             style="@style/ET_login_activity"
             android:layout_marginTop="3dp"
-            android:hint="@string/login"
+            android:hint="@string/login_example2"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
-            android:labelFor="@+id/text_login_activity_register"
+            android:labelFor="@+id/text_login_forget_pass_activity"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_login_activity_register" />
+            app:layout_constraintTop_toBottomOf="@+id/text_login_forget_pass_activity" />
 
         <TextView
             android:id="@+id/text_password_activity_register"
@@ -66,7 +64,7 @@
             android:id="@+id/ET_password_register_activity"
             style="@style/ET_login_activity"
             android:layout_marginTop="2dp"
-            android:hint="@string/password"
+            android:hint="@string/password_example2"
             android:importantForAutofill="no"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
@@ -84,9 +82,10 @@
             android:src="@drawable/ic_next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintHorizontal_bias="0.924"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/text_logTghr_activity_login"

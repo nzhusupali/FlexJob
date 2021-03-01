@@ -36,15 +36,15 @@
             android:id="@+id/ET_login_activity_login"
             style="@style/ET_login_activity"
             android:layout_marginTop="108dp"
+            android:hint="@string/login_example"
+            android:importantForAutofill="no"
             android:inputType="textEmailAddress"
+            android:labelFor="@id/text_login_activity_login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:importantForAutofill="no"
-            android:hint="@string/login"
-            android:labelFor="@id/text_login_activity_login"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/text_password_activity_login"
             style="@style/Text_login_activity"
@@ -61,9 +61,9 @@
             style="@style/ET_login_activity"
             android:layout_marginTop="36dp"
             android:autofillHints="password"
-            android:hint="@string/password"
-            android:labelFor="@id/text_password_activity_login"
+            android:hint="@string/password_example"
             android:inputType="textVisiblePassword"
+            android:labelFor="@id/text_password_activity_login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -71,16 +71,9 @@
 
         <Button
             android:id="@+id/BTN_login_activity_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
             android:layout_marginTop="285dp"
-            android:layout_marginBottom="162dp"
-            android:layout_x="104dp"
-            android:layout_y="275dp"
-            android:background="@color/colorPrimary"
-            android:fontFamily="@font/futura_light"
             android:text="@string/login"
-            android:textColor="@color/WhiteColor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -127,12 +120,12 @@
             android:layout_width="@dimen/ic_size"
             android:layout_height="@dimen/ic_size"
             android:layout_marginTop="16dp"
+            android:contentDescription="@string/logo"
             android:src="@drawable/ic_google"
             app:layout_constraintEnd_toStartOf="@+id/Sign_facebook_register_activity"
             app:layout_constraintHorizontal_bias="0.519"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_logTghr_activity_login"
-            android:contentDescription="@string/logo" />
+            app:layout_constraintTop_toBottomOf="@+id/text_logTghr_activity_login" />
 
         <TextView
             android:id="@+id/text_HaveAcc_activity_login"

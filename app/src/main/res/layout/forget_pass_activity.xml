@@ -4,31 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".forgetPassActivity">
+    android:background="@color/grey"
+    tools:context=".RegisterActivity">
 
-    <Button
-        android:id="@+id/backPressed_forget_Pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="277dp"
+        android:layout_height="495dp"
+        android:layout_margin="@dimen/basic_margin"
+        android:background="@color/WhiteColor"
+        android:padding="@dimen/basic_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/ripple_effect"
-        android:focusable="true"
-        android:clickable="true"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintVertical_bias="0.611">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/large_text"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimary"
-        android:text="It's worked !"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backPressed_forget_Pass" />
+
+        <TextView
+            style="@style/headWords"
+            android:layout_marginTop="60dp"
+            android:text="@string/password_retrieval"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_login_forget_pass_activity"
+            style="@style/Text_login_activity"
+            android:layout_width="234dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="140dp"
+            android:text="@string/text_recover_pass"
+            android:textSize="@dimen/small_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ET_email_forget_pass_activity"
+            style="@style/ET_login_activity"
+            android:layout_marginTop="3dp"
+            android:hint="@string/login_example3"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:labelFor="@+id/text_login_forget_pass_activity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_login_forget_pass_activity" />
+
+        <Button
+            android:id="@+id/BTN_reset_pass_forget_pass_activity"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_password"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ET_email_forget_pass_activity"
+            app:layout_constraintVertical_bias="0.62" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

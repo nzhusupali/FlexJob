@@ -1,4 +1,4 @@
-<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+<resources>
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
@@ -9,8 +9,6 @@
         <item name="background">@color/background</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:elevation">4dp</item>
-
-
         <item name="font">@font/futura_light</item>
     </style>
 
@@ -49,6 +47,16 @@
         <item name="android:padding">@dimen/basic_margin</item>
     </style>
 
+    <style name="headWords">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/basic_margin</item>
+        <item name="android:layout_marginEnd">@dimen/basic_margin</item>
+        <item name="android:textColor">@color/BlackColor</item>
+        <item name="android:textSize">23sp</item>
+        <item name="fontFamily">@font/futura_bold</item>
+
+    </style>
     <style name="Text_login_activity">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -56,5 +64,14 @@
         <item name="android:textColor">@color/BlackColor</item>
         <item name="android:textSize">@dimen/large_text</item>
 
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">162dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/futura_bold</item>
+        <item name="android:textColor">@color/WhiteColor</item>
     </style>
 </resources>

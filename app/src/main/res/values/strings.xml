@@ -18,20 +18,29 @@
     <string name="login">Login</string>
     <string name="emailOrPhoneNumber">Enter your email or phone number</string>
     <string name="e_mail">E-mail</string>
+    <string name="login_example" translatable="false">Trump@gmail.com</string>
+    <string name="password_example" translatable="false">pentagon123</string>
+    <string name="login_example2" translatable="false">Putin@mail.ru</string>
+    <string name="password_example2" translatable="false">RussiaGreatAgain</string>
+    <string name="login_example3" translatable="false">KimChenIn@Bomb.kp</string>
 
     <!--    login_activity  -->
     <string name="have_an_account">Have an account ?</string>
     <string name="loginTghr">login in through</string>
-    <!--    login activity end-->
+
+    <!--    Forgot pass activity    -->
+    <string name="password_retrieval">Password retrieval</string>
+    <string name="text_recover_pass">Enter your email address to reset your password</string>
+    <string name="reset_password">Reset password</string>
+
 
     <!--    SCROLL BAR  -->
     <string name="loader">Loader</string>
-    <!--    SCROLL BAR END-->
-<!--    Facebook  -->
+
+    <!--    Facebook  -->
     <string name="facebook_app_id" translatable="false">175463684151031</string>
     <string name="fb_login_protocol_scheme" translatable="false">fb175463684151031</string>
     <string name="logo" translatable="false">Logo</string>
     <string name="next_button" translatable="false">next Button</string>
 
-    <!--    Facebook End-->
 </resources>

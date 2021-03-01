@@ -24,8 +24,8 @@ import kotlinx.android.synthetic.main.register_activity.*
 
 class RegisterActivity : AppCompatActivity() {
     lateinit var mGoogleSignInClient: GoogleSignInClient
-    val Req_Code: Int = 123
-    val firebaseAuth = FirebaseAuth.getInstance()
+    private val Req_Code: Int = 123
+    private val firebaseAuth = FirebaseAuth.getInstance()
     var callBackManager: CallbackManager? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.login_activity)
 
         text_forgetPass_activity_login.setOnClickListener {
-            startActivity(Intent(this@LoginActivity, forgetPassActivity::class.java))
+            startActivity(Intent(this@LoginActivity, ForgetPassActivity::class.java))
         }
         BTN_login_activity_login.setOnClickListener {
             startActivity(Intent(this@LoginActivity, MainActivity::class.java))
