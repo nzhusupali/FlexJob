@@ -2,12 +2,16 @@
 <resources>
     <dimen name="small_text">15sp</dimen>
     <dimen name="large_text">20sp</dimen>
+    <dimen name="middle_text">23.4</dimen>
     <dimen name="extra_large">30sp</dimen>
 
-    <dimen name="ic_size">50dp</dimen>
-    <dimen name="settings_ripple_effect_radius">2dp</dimen>
+    <dimen name="ic_size">50sp</dimen>
+    <dimen name="settings_ripple_effect_radius">2sp</dimen>
     <dimen name="edit_text_size">200sp</dimen>
 
-    <dimen name="basic_margin">10dp</dimen>
+    <dimen name="basic_margin">10sp</dimen>
     <dimen name="title_text">40sp</dimen>
+    <dimen name="icon_settings_activity">20sp</dimen>
+    <dimen name="padding_icon_settings_activity">25sp</dimen>
+    <dimen name="padding_icon_ET">10sp</dimen>
 </resources>

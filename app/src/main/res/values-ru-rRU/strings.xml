@@ -2,33 +2,62 @@
 <resources>
     <string name="app_name">FlexJob</string>
 
-    <string name="sign_in" >Войти</string>
-    <string name="register_d" >Регистрация</string>
-    <string name="find_d" >Найдите работу по вашему вкусу</string>
-    <string name="main" >Главное</string>
-    <string name="add" >Добавить объявление</string>
+    <string name="sign_in">Войти</string>
+    <string name="register_d">Регистрация</string>
+    <string name="find_d">Найдите работу по вашему вкусу</string>
+    <string name="main">Главное</string>
+    <string name="add">Добавить объявление</string>
     <string name="settings">настройки</string>
     <string name="password">Пароль</string>
-    <string name="message" >Сообщения</string>
-    <string name="loginEnter" >Введите логин</string>
-    <string name="passwordEnter" >Введите пароль</string>
-    <string name="forgotPassword" >ЗАБЫЛИ ПАРОЛЬ ?</string>
-    <string name="findWork">Найти работу</string>
+    <string name="message">Сообщения</string>
+    <string name="loginEnter">Введите логин</string>
+    <string name="passwordEnter">Введите пароль</string>
+    <string name="forgotPassword">ЗАБЫЛИ ПАРОЛЬ ?</string>
     <string name="login">Логин</string>
     <string name="emailOrPhoneNumber">Введите электронную почту или номер телефона</string>
     <string name="e_mail">Электронная почта</string>
 
-
+    <!--    Main activity   -->
+    <string name="findWork">Найти работу</string>
+    <string name="fast_work">Быстрая работа</string>
+    <string name="offer_job">Предложить работу</string>
 
     <!--    login_activity  -->
     <string name="have_an_account">Нужен аккаунт ?</string>
     <string name="loginTghr">Войти через</string>
+    <string name="login_to">Войти в FlexJob</string>
+
+    <!--    Register activity   -->
+    <string name="regTghr">Регистрация через</string>
 
     <!--    Forgot pass activity    -->
     <string name="password_retrieval">Восстановление пароля</string>
     <string name="text_recover_pass">Введите Ваш электронный адрес, чтобы сбросить пароль</string>
     <string name="reset_password">Сброс пароля</string>
 
+    <!--    Settings Activity-->
+    <string name="hello">Здравствуйте</string>
+
+    <string name="acc_settings">Настройки аккаунта</string>
+    <string name="Edit_profile">Редактировать профиль</string>
+    <string name="Change_pass">Изменить пароль</string>
+    <string name="Dell_acc">Удалить Аккаунт</string>
+
+    <string name="app_settings">Настройки приложения</string>
+    <string name="notifi">Уведомления</string>
+    <string name="Dark_theme">Тёмная тема</string>
+    <string name="language">Язык</string>
+
+    <string name="Help">Помощь</string>
+    <string name="Ask_que">Задайте вопрос</string>
+    <string name="privace_poll">Политика безопасности</string>
+    <string name="exit">Выйти</string>
+
+
+
+
+
+
     <!--    SCROLL BAR  -->
-    <string name="loader" >Грузчик</string>
+    <string name="loader">Грузчик</string>
 </resources>

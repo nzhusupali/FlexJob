@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="@layout/activity_main">
 
+    <TextView
+        style="@style/TitleText_settings_activity"
+        android:text="@string/findWork" />
+
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
@@ -11,9 +15,12 @@
         android:layout_y="52dp"
         tools:showIn="@layout/activity_main">
 
+
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/sample2"
                 style="@style/scroll_view_icons"
@@ -33,11 +40,6 @@
                 android:id="@+id/sample5"
                 style="@style/scroll_view_icons"
                 android:src="@drawable/ic_loader" />
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/sample6"
-                style="@style/scroll_view_icons"
-                android:src="@drawable/ic_person" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/sample7"

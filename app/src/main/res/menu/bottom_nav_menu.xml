@@ -15,7 +15,7 @@
     <item
         android:id="@+id/settings_bottom_nav_menu"
         android:fontFamily="@font/futura_light"
-        android:icon="@drawable/ic_settings"
+        android:icon="@drawable/ic_profile"
         android:title="@string/settings" />
 
 </menu>

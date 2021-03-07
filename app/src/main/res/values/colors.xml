@@ -5,7 +5,8 @@
     <color name="colorAccent">#F3F3F3</color>
     <color name="background">#F3F3F3</color>
 
-    <color name="ripple_effect_color"></color>
+    <color name="background_settings_fragment">#F2E7F4</color>
+    <color name="ripple_effect_color">@color/colorPrimaryDark</color>
     <color name="Gray">#E8E6E6</color>
     <color name="grey">#D2D2D2</color>
     <color name="NavMenucolor">#757575</color>

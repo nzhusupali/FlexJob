@@ -47,6 +47,8 @@
             android:layout_marginTop="3dp"
             android:hint="@string/login_example3"
             android:importantForAutofill="no"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="@dimen/padding_icon_ET"
             android:inputType="textEmailAddress"
             android:labelFor="@+id/text_login_forget_pass_activity"
             app:layout_constraintEnd_toEndOf="parent"

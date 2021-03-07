@@ -20,11 +20,22 @@
         app:layout_constraintVertical_bias="0.563">
 
         <TextView
+            style="@style/TitleText_settings_activity"
+            android:layout_marginTop="32dp"
+            android:text="@string/login_to"
+            app:layout_constraintBottom_toTopOf="@+id/ET_login_activity_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.08" />
+
+        <TextView
             android:id="@+id/text_login_activity_login"
             style="@style/Text_login_activity"
             android:layout_x="47dp"
             android:layout_y="108dp"
             android:text="@string/login"
+            android:fontFamily="@font/futura_bold"
             app:layout_constraintBottom_toTopOf="@+id/ET_login_activity_login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.069"
@@ -36,6 +47,8 @@
             android:id="@+id/ET_login_activity_login"
             style="@style/ET_login_activity"
             android:layout_marginTop="108dp"
+            android:drawableStart="@drawable/ic_person_"
+            android:drawablePadding="@dimen/padding_icon_ET"
             android:hint="@string/login_example"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
@@ -62,6 +75,8 @@
             android:layout_marginTop="36dp"
             android:autofillHints="password"
             android:hint="@string/password_example"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="@dimen/padding_icon_ET"
             android:inputType="textVisiblePassword"
             android:labelFor="@id/text_password_activity_login"
             app:layout_constraintEnd_toEndOf="parent"
@@ -100,20 +115,17 @@
 
         <TextView
             android:id="@+id/text_logTghr_activity_login"
-            android:layout_width="wrap_content"
-            android:layout_height="15dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginBottom="120dp"
+            style="@style/Text_login_activity"
             android:layout_x="94dp"
             android:layout_y="364dp"
-            android:fontFamily="@font/futura_light"
             android:text="@string/loginTghr"
-            android:textColor="@color/BlackColor"
             android:textSize="@dimen/small_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/BTN_login_activity_login" />
+            app:layout_constraintTop_toBottomOf="@+id/BTN_login_activity_login"
+            app:layout_constraintVertical_bias="0.142" />
 
         <ImageView
             android:id="@+id/Sign_Google_register_activity"

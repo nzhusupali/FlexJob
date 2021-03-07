@@ -3,6 +3,7 @@ package com.example.flexJob
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.FlexJob.SettingsActivity
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.settings_bottom_nav_menu -> startActivity(
                     Intent(
                         this@MainActivity,
-                        LoginActivity::class.java
+                        SettingsActivity::class.java
                     )
                 )
 

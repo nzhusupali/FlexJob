@@ -55,14 +55,47 @@
         <item name="android:textColor">@color/BlackColor</item>
         <item name="android:textSize">23sp</item>
         <item name="fontFamily">@font/futura_bold</item>
-
     </style>
+
+    <style name="ConstrLay_settings_activity">
+        <item name="android:background">@color/background_settings_fragment</item>
+        <item name="paddingStart">220dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="TitleText_settings_activity">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/BlackColor</item>
+        <item name="android:textSize">23sp</item>
+        <item name="fontFamily">@font/futura_bold</item>
+    </style>
+
     <style name="Text_login_activity">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="fontFamily">@font/futura_light</item>
         <item name="android:textColor">@color/BlackColor</item>
         <item name="android:textSize">@dimen/large_text</item>
+
+    </style>
+
+    <style name="Text_settings_activity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/futura_light</item>
+        <item name="android:textColor">@color/BlackColor</item>
+        <item name="android:textSize">@dimen/large_text</item>
+        <item name="android:layout_marginTop">130dp</item>
+    </style>
+
+    <style name="Text_main_activity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/futura_bold</item>
+        <item name="android:textColor">@color/BlackColor</item>
+        <item name="android:textSize">@dimen/middle_text</item>
 
     </style>
 

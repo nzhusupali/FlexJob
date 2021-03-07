@@ -1,0 +1,299 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:scrollbars="vertical"
+    tools:context="com.example.FlexJob.SettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="291dp"
+            android:layout_marginBottom="784dp"
+            android:src="@drawable/ic_cook"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            style="@style/TitleText_settings_activity"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="106dp"
+            android:layout_marginEnd="209dp"
+            android:layout_marginBottom="750dp"
+            android:text="@string/hello"
+            android:textColor="@color/NavMenuColor2"
+            android:textSize="@dimen/extra_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/constraintLayout"
+            style="@style/ConstrLay_settings_activity"
+            android:layout_height="170dp"
+            android:layout_marginTop="139dp"
+            android:layout_marginBottom="581dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/TitleText_settings_activity"
+                android:layout_width="283dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="220dp"
+                android:layout_marginBottom="128dp"
+                android:text="@string/acc_settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/Text_settings_activity"
+                android:layout_width="321dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="53dp"
+                android:layout_marginEnd="201dp"
+                android:layout_marginBottom="95dp"
+                android:drawableStart="@drawable/ic_pencil"
+                android:drawablePadding="@dimen/padding_icon_settings_activity"
+                android:text="@string/Edit_profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/Text_settings_activity"
+                android:layout_width="321dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="136dp"
+                android:layout_marginBottom="58dp"
+                android:drawableStart="@drawable/ic_lock_o"
+                android:drawablePadding="19.5dp"
+                android:text="@string/Change_pass"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/Text_settings_activity"
+                android:layout_width="322dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="122dp"
+                android:layout_marginEnd="165dp"
+                android:layout_marginBottom="26dp"
+                android:drawableStart="@drawable/ic_delete_acc"
+                android:drawablePadding="@dimen/padding_icon_settings_activity"
+                android:text="@string/Dell_acc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/constraintLayout2"
+            style="@style/ConstrLay_settings_activity"
+            android:layout_width="410dp"
+            android:layout_height="169dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginBottom="400dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/TitleText_settings_activity"
+                android:layout_width="283dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="220dp"
+                android:layout_marginBottom="128dp"
+                android:text="@string/app_settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/Text_settings_activity"
+                android:layout_width="325dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="52dp"
+                android:drawableStart="@drawable/ic_alert"
+                android:drawablePadding="@dimen/padding_icon_settings_activity"
+                android:text="@string/notifi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/Text_settings_activity"
+                android:layout_width="326dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="84dp"
+                android:drawableStart="@drawable/ic_night_mode"
+                android:drawablePadding="@dimen/padding_icon_settings_activity"
+                android:text="@string/Dark_theme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/Text_settings_activity"
+                android:layout_width="327dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="112dp"
+                android:drawableStart="@drawable/ic_language"
+                android:drawablePadding="@dimen/padding_icon_settings_activity"
+                android:text="@string/language"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/constraintLayout3"
+            style="@style/ConstrLay_settings_activity"
+            android:layout_height="150dp"
+            android:layout_marginTop="520dp"
+            android:layout_marginBottom="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/TitleText_settings_activity"
+                android:layout_width="199dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="329dp"
+                android:layout_marginBottom="108dp"
+                android:text="@string/Help"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/Text_settings_activity"
+                android:layout_width="331dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="54dp"
+                android:drawableStart="@drawable/ic_menu_help"
+                android:drawablePadding="25dp"
+                android:text="@string/Ask_que"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/Text_settings_activity"
+                android:layout_width="331dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="119dp"
+                android:drawableStart="@drawable/ic_guard"
+                android:drawablePadding="25dp"
+                android:text="@string/privace_poll"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.119"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="689dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                style="@style/ButtonStyle"
+                android:layout_marginStart="162dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="161dp"
+                android:background="@color/WhiteColor"
+                android:layout_marginBottom="112dp"
+                android:text="@string/exit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                style="@style/Text_settings_activity"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="147dp"
+                android:layout_marginBottom="31dp"
+                android:text="@string/app_version"
+                android:textSize="@dimen/small_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            style="@style/Text_settings_activity"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="879dp"
+            android:text="@string/app_year"
+            android:textSize="@dimen/small_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
