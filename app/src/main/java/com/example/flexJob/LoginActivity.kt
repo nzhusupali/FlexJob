@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
         text_HaveAcc_activity_login.setOnClickListener {
             startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
         }
-        ET_login_activity_login.setOnClickListener {
+        BTN_login_activity_login.setOnClickListener {
             when {
                 TextUtils.isEmpty(ET_login_activity_login.text.toString().trim { it <= ' ' }) -> {
                     Toast.makeText(
@@ -73,28 +73,26 @@ class LoginActivity : AppCompatActivity() {
 //                                val firebaseUser: FirebaseUser = task.result!!.user!!
                                 Toast.makeText(
                                     this@LoginActivity,
-                                    "You are register successfully.",
+                                    "You log in is successfull",
                                     Toast.LENGTH_SHORT
                                 ).show()
-//                                if all operation successfully, going to MainActivty
-                                val intent =
-                                    Intent(this@LoginActivity, MainActivity::class.java)
-                                intent.flags =
-                                    Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                intent.putExtra(
-                                    "user_id",
-                                    FirebaseAuth.getInstance().currentUser!!.uid
-                                )
-                                intent.putExtra("email id", email)
-                                startActivity(intent)
-                                finish()
-                            } else {
+//                              if all operation successfully, going to MainActivty
+                                if (task.isSuccessful) {
+                                    val intent =
+                                        Intent(this@LoginActivity, MainActivity::class.java)
+                                    intent.flags =
+                                        Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                    startActivity(intent)
+                                    finish()
+
+                                } else {
 //                                If the login is not successful then show error message.
-                                Toast.makeText(
-                                    this@LoginActivity,
-                                    task.exception!!.message.toString(),
-                                    Toast.LENGTH_SHORT
-                                ).show()
+                                    Toast.makeText(
+                                        this@LoginActivity,
+                                        task.exception!!.message.toString(),
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                }
                             }
                         }
                 }
@@ -115,75 +113,85 @@ class LoginActivity : AppCompatActivity() {
 
         // initialize the firebaseAuth variable
         FirebaseAuth.getInstance()
-        Sign_Google_register_activity.setOnClickListener{
+        Sign_Google_register_activity.setOnClickListener {
             signInGoogle()
         }
-        /** There End Google auth ...*/
+        /**
+         *  There End Google auth ...*/
 
-        /** There start Facebook auth firebase*/
+        /**
+         *  There start Facebook auth firebase*/
         callBackManager = CallbackManager.Factory.create()
         Sign_facebook_register_activity.setReadPermissions("email")
         Sign_facebook_register_activity.setOnClickListener {
             signin()
         }
-        /** There end Facebook auth firebase*/
+        /**
+         *  There end Facebook auth firebase
+         *  */
 
     }
 
-    /** There start Google auth in Firebase     ...*/
+    /**
+     * There start Google auth in Firebase
+     * ...*/
     // signInGoogle() function
-    private  fun signInGoogle(){
+    private fun signInGoogle() {
 
-        val signInIntent:Intent=mGoogleSignInClient.signInIntent
-        startActivityForResult(signInIntent,Req_Code)
+        val signInIntent: Intent = mGoogleSignInClient.signInIntent
+        startActivityForResult(signInIntent, Req_Code)
     }
+
     // onActivityResult() function : this is where we provide the task and data for the Google Account
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         // Faceebook
-        callBackManager?.onActivityResult(requestCode,resultCode,data)
-        if(requestCode==Req_Code){
-            val task:Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
+        callBackManager?.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == Req_Code) {
+            val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
             handleResult(task)
         }
     }
+
     // handleResult() function -  this is where we update the UI after Google signin takes place
-    private fun handleResult(completedTask: Task<GoogleSignInAccount>){
+    private fun handleResult(completedTask: Task<GoogleSignInAccount>) {
         try {
-            val account: GoogleSignInAccount? =completedTask.getResult(ApiException::class.java)
+            val account: GoogleSignInAccount? = completedTask.getResult(ApiException::class.java)
             if (account != null) {
                 UpdateUI(account)
             }
-        } catch (e:ApiException){
-            Toast.makeText(this,e.toString(),Toast.LENGTH_SHORT).show()
+        } catch (e: ApiException) {
+            Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show()
         }
     }
+
     // UpdateUI() function - this is where we specify what UI updation are needed after google signin has taken place.
-    private fun UpdateUI(account: GoogleSignInAccount){
-        val credential= GoogleAuthProvider.getCredential(account.idToken,null)
-        firebaseAuth.signInWithCredential(credential).addOnCompleteListener {task->
-            if(task.isSuccessful) {
-                SavedPreference.setEmail(this,account.email.toString())
-                SavedPreference.setUsername(this,account.displayName.toString())
+    private fun UpdateUI(account: GoogleSignInAccount) {
+        val credential = GoogleAuthProvider.getCredential(account.idToken, null)
+        firebaseAuth.signInWithCredential(credential).addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                SavedPreference.setEmail(this, account.email.toString())
+                SavedPreference.setUsername(this, account.displayName.toString())
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             }
         }
     }
-    /**
-     * НЕ ЗАБУДЬ ВКЛЮЧИТЬ
-     */
-//    override fun onStart() {
-//        super.onStart()
-//        if(GoogleSignIn.getLastSignedInAccount(this)!=null){
-//            startActivity(Intent(this, MainActivity::class.java))
-//            finish()
-//        }
-//    } // не забудь вкключить
-    /** There end Google auth in Firebase     ...*/
 
-    /** Facebook Auth Firebase Started*/
+
+    override fun onStart() {
+        super.onStart()
+        if (GoogleSignIn.getLastSignedInAccount(this) != null) {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
+    }
+    /**
+     * There end Google auth in Firebase     ...*/
+
+    /**
+     *  Facebook Auth Firebase Started*/
     private fun signin() {
         Sign_facebook_register_activity.registerCallback(callBackManager, object :
             FacebookCallback<LoginResult> {
@@ -206,15 +214,16 @@ class LoginActivity : AppCompatActivity() {
         // get the credentials
         val credentials = FacebookAuthProvider.getCredential(accessToken!!.token)
         firebaseAuth.signInWithCredential(credentials)
-            .addOnSuccessListener {result ->
+            .addOnSuccessListener { result ->
                 // get the email
                 val email = result.user?.email
-                Toast.makeText(this,"You logged in with " +email, Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "You logged in with " + email, Toast.LENGTH_LONG).show()
             }
-            .addOnFailureListener{e ->
-                Toast.makeText(this,e.message,Toast.LENGTH_LONG).show()
+            .addOnFailureListener { e ->
+                Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
             }
 
     }
-    /** Facebook Auth Firebase Ended*/
+    /**
+     * Facebook Auth Firebase Ended*/
 }

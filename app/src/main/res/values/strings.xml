@@ -3,7 +3,6 @@
     <string name="app_name">FlexJob</string>
 
     <string name="sign_in">Sign in</string>
-    <string name="register_d">Registration</string>
 
     <string name="find_d">Find a job to your liking</string>
     <string name="main">Main</string>
@@ -28,19 +27,24 @@
     <string name="fast_work">Fast work</string>
     <string name="offer_job">Offer job</string>
 
+    <!--    Delete user activity        -->
+    <string name="text_delete_acc">Enter your email address to delete your account</string>
 
     <!--    login_activity  -->
-    <string name="have_an_account">Have an account ?</string>
+    <string name="need_an_account">Need an account ?</string>
     <string name="loginTghr">login in through</string>
     <string name="login_to">Login to FlexJob</string>
 
     <!--    Register activity   -->
+    <string name="have_an_account">Have an account ?</string>
+    <string name="register_d">Register</string>
+    <string name="register">Register to FlexJob</string>
     <string name="regTghr">Register in through</string>
 
 
     <!--    Forgot pass activity    -->
     <string name="password_retrieval">Password retrieval</string>
-    <string name="text_recover_pass">Enter your email address to reset your password</string>
+    <string name="text_recover_pass">Enter your email address to recovery your password</string>
     <string name="reset_password">Reset password</string>
 
     <!--    Settings Activity-->
@@ -63,6 +67,8 @@
     <string name="exit">Exit</string>
     <string name="app_version" translatable="false">FlexJob for Android v0.0.1</string>
     <string name="app_year" translatable="false">2021</string>
+    <string name="there_email_user" translatable="false">there_email_user</string>
+
 
     <!--    SCROLL BAR  -->
     <string name="loader">Loader</string>

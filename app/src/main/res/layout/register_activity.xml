@@ -23,7 +23,7 @@
         <TextView
             style="@style/headWords"
             android:layout_marginTop="56dp"
-            android:text="@string/register_d"
+            android:text="@string/register"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -31,8 +31,10 @@
         <TextView
             android:id="@+id/text_login_forget_pass_activity"
             style="@style/Text_login_activity"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginBottom="357dp"
             android:text="@string/e_mail"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.123"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +57,7 @@
         <TextView
             android:id="@+id/text_password_activity_register"
             style="@style/Text_login_activity"
-            android:layout_marginTop="212dp"
+            android:layout_marginTop="180dp"
             android:text="@string/password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.099"
@@ -66,29 +68,43 @@
             android:id="@+id/ET_password_register_activity"
             style="@style/ET_login_activity"
             android:layout_marginTop="2dp"
-            android:hint="@string/password_example2"
-            android:importantForAutofill="no"
             android:drawableStart="@drawable/ic_password"
             android:drawablePadding="@dimen/padding_icon_ET"
+            android:hint="@string/password_example2"
+            android:importantForAutofill="no"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_password_activity_register" />
 
 
+        <Button
+            android:id="@+id/BTN_next_email_pass_register"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="285dp"
+            android:layout_marginBottom="152dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/register_d"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/text_logTghr_activity_login"
+            android:id="@+id/text_regTghr_activity_register"
             style="@style/Text_login_activity"
             android:layout_x="94dp"
             android:layout_y="364dp"
             android:text="@string/regTghr"
+            android:textSize="@dimen/small_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintHorizontal_bias="0.465"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ET_password_register_activity"
-            app:layout_constraintVertical_bias="0.144" />
+            app:layout_constraintVertical_bias="0.497" />
 
         <ImageView
             android:id="@+id/Sign_Google_register_activity"
@@ -100,7 +116,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.233"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_logTghr_activity_login"
+            app:layout_constraintTop_toBottomOf="@+id/text_regTghr_activity_register"
             app:layout_constraintVertical_bias="0.294" />
 
         <com.facebook.login.widget.LoginButton
@@ -111,22 +127,24 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintStart_toEndOf="@+id/Sign_Google_register_activity"
-            app:layout_constraintTop_toBottomOf="@+id/text_logTghr_activity_login"
+            app:layout_constraintTop_toBottomOf="@+id/text_regTghr_activity_register"
             app:layout_constraintVertical_bias="0.333" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/BTN_next_email_pass_register"
+
+        <TextView
+            android:id="@+id/text_HaveAcc_activity_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:clickable="true"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/futura_light"
+            android:text="@string/have_an_account"
+            android:textColor="@color/BlackColor"
+            android:textSize="@dimen/small_text"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.945"
-            app:layout_constraintStart_toStartOf="parent"
-            android:focusable="true" />
-
-
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

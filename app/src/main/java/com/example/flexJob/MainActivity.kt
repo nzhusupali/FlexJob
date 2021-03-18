@@ -3,7 +3,6 @@ package com.example.flexJob
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.FlexJob.SettingsActivity
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
@@ -22,13 +21,13 @@ class MainActivity : AppCompatActivity() {
 
         bottomNavigationView.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.settings_bottom_nav_menu -> startActivity(
+                R.id.settings_bottom_nav_menu ->
+                    startActivity(
                     Intent(
                         this@MainActivity,
                         SettingsActivity::class.java
                     )
                 )
-
             }
             return@OnNavigationItemSelectedListener true
         })
@@ -50,5 +49,6 @@ class MainActivity : AppCompatActivity() {
          * Google Auth End
          */
     }
+
 }
 
