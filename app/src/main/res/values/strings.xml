@@ -3,19 +3,31 @@
     <string name="app_name">FlexJob</string>
 
     <string name="sign_in">Sign in</string>
-
     <string name="find_d">Find a job to your liking</string>
-    <string name="main">Main</string>
-    <string name="add">Add AD</string>
-    <string name="settings">settings</string>
-    <string name="password">Password</string>
     <string name="message">Message</string>
-    <string name="loginEnter">Enter your login</string>
-    <string name="passwordEnter">Enter your password</string>
-    <string name="forgotPassword">Forgot your password ?</string>
+
+
+    // All Code
+    <string name="Error_server">Unable to contact the server</string>
+
+    // Login, Register,Settings ForgetPass... activity
     <string name="login">Login</string>
     <string name="emailOrPhoneNumber">Enter your email or phone number</string>
     <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="loginEnter">Enter your login</string>
+    <string name="passwordEnter">Enter your password</string>
+    <string name="forgotPassword">Forgot your password ?</string>
+
+    // Login, Register,Settings ForgetPass... class
+    <string name="email_req">Email required</string>
+    <string name="valid_email_req">Valid Email Required</string>
+    <string name="Check_email">Check your email</string>
+    <string name="enter_email">Please enter email</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="Login_successful">You have successfully logged</string>
+
+    // Login and Register context... activity
     <string name="login_example" translatable="false">Trump@gmail.com</string>
     <string name="password_example" translatable="false">pentagon123</string>
     <string name="login_example2" translatable="false">Putin@mail.ru</string>
@@ -23,29 +35,45 @@
     <string name="login_example3" translatable="false">KimChenIn@Bomb.kp</string>
 
     <!--    Main activity   -->
-    <string name="findWork">Find work</string>
+    <string name="main">Main</string>
+    <string name="add">Add AD</string>
+    <string name="settings">settings</string>
+    <string name="findJob">Find  Job</string>
     <string name="fast_work">Fast work</string>
-    <string name="offer_job">Offer job</string>
+    <string name="find_employee">Find employee</string>
+    <string-array name="findJ">
+        <item>Find Job</item>
+    </string-array>
+
+    <string-array name="findE">
+        <item>Find employee</item>
+    </string-array>
 
     <!--    Delete user activity        -->
     <string name="text_delete_acc">Enter your email address to delete your account</string>
+    // Kotlin class
+    <string name="Acc_deleted">Account deleted</string>
 
     <!--    login_activity  -->
     <string name="need_an_account">Need an account ?</string>
     <string name="loginTghr">login in through</string>
     <string name="login_to">Login to FlexJob</string>
-
+    // Kotlin class
+    <string name="exception_login">Email or password is incorrect</string>
     <!--    Register activity   -->
     <string name="have_an_account">Have an account ?</string>
     <string name="register_d">Register</string>
     <string name="register">Register to FlexJob</string>
     <string name="regTghr">Register in through</string>
+    // Kotlin class
+    <string name="register_successful">You are register successfully</string>
 
 
     <!--    Forgot pass activity    -->
     <string name="password_retrieval">Password retrieval</string>
     <string name="text_recover_pass">Enter your email address to recovery your password</string>
     <string name="reset_password">Reset password</string>
+    // Kotlin class
 
     <!--    Settings Activity-->
     <string name="hello">Hello</string>
@@ -64,19 +92,41 @@
     <string name="Ask_que">Ask a question</string>
     <string name="privace_poll">Security policy</string>
 
-    <string name="exit">Exit</string>
+    <string name="logOut">Log out</string>
     <string name="app_version" translatable="false">FlexJob for Android v0.0.1</string>
     <string name="app_year" translatable="false">2021</string>
     <string name="there_email_user" translatable="false">there_email_user</string>
-
+    // Kotlin class
+    <string name="sure_change_pass">Are you sure want to change password ?</string>
+    <string name="Sure_delete_acc">Are you sure want to delete your account ?</string>
+    <string name="Sure_exit_acc">Are you sure want to sign out  of your account ?</string>
 
     <!--    SCROLL BAR  -->
     <string name="loader">Loader</string>
+
+    <!--    Positive and Negative Buttons - Alert Dialog    -->
+    <string name="YesPositive">Yes</string>
+    <string name="NoNegative">No</string>
+
+    <!--    Change Password Activity     -->
+    <string name="text_old_password">Enter your old password</string>
+    <string name="text_new_password">Enter your new password</string>
+    // Kotlin
+    <string name="pass_update">Password updated successfully</string>
+
+    <!--    Change Email Activity    -->
+    <string name="change_email">Change email</string>
+    <string name="text_old_email">Enter your old email</string>
+    <string name="text_new_email">Enter your new email</string>
+    // Kotlin
+    <string name="email_update">Email updated successfully</string>
 
     <!--    Facebook  -->
     <string name="facebook_app_id" translatable="false">175463684151031</string>
     <string name="fb_login_protocol_scheme" translatable="false">fb175463684151031</string>
     <string name="logo" translatable="false">Logo</string>
     <string name="next_button" translatable="false">next Button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

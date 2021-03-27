@@ -4,40 +4,67 @@
 
     <string name="sign_in">Войти</string>
     <string name="find_d">Найдите работу по вашему вкусу</string>
-    <string name="main">Главное</string>
-    <string name="add">Добавить объявление</string>
-    <string name="settings">настройки</string>
-    <string name="password">Пароль</string>
     <string name="message">Сообщения</string>
-    <string name="loginEnter">Введите логин</string>
-    <string name="passwordEnter">Введите пароль</string>
-    <string name="forgotPassword">ЗАБЫЛИ ПАРОЛЬ ?</string>
+
+    // All Code
+    <string name="Error_server">Unable to contact the server</string>
+
+    // Login, Register,Settings ForgetPass... activity
     <string name="login">Логин</string>
     <string name="emailOrPhoneNumber">Введите электронную почту или номер телефона</string>
     <string name="e_mail">Электронная почта</string>
+    <string name="password">Пароль</string>
+    <string name="loginEnter">Введите логин</string>
+    <string name="passwordEnter">Введите пароль</string>
+    <string name="forgotPassword">ЗАБЫЛИ ПАРОЛЬ ?</string>
+
+        // Login, Register,Settings ForgetPass... class
+    <string name="email_req">Введите электронную почту</string>
+    <string name="valid_email_req">Введите действующий адрес электронной почты</string>
+    <string name="Check_email">Проверьте ваш электронный адрес</string>
+    <string name="enter_email">Введите электронную почту</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="Login_successful">Вы успешно авторизовались</string>
+
+
 
     <!--    Main activity   -->
-    <string name="findWork">Найти работу</string>
+    <string name="findJob">Найти работу</string>
+    <string name="add">Добавить объявление</string>
     <string name="fast_work">Быстрая работа</string>
-    <string name="offer_job">Предложить работу</string>
+    <string name="find_employee">Найти работника</string>
+    <string name="main">Главное</string>
+    <string name="settings">настройки</string>
+    <string-array name="findJ">
+        <item>Найти работу</item>
+    </string-array>
+    <string-array name="findE">
+        <item>Найти работника</item>
+    </string-array>
 
     <!--    Delete user activity        -->
     <string name="text_delete_acc">Введите Ваш электронный адрес, чтобы удалить ваш аккаунт</string>
+    // Kotlin class
+    <string name="Acc_deleted">Аккаунт удален</string>
 
     <!--    login_activity  -->
     <string name="need_an_account">Нужен аккаунт ?</string>
     <string name="loginTghr">Войти через</string>
     <string name="login_to">Войти в FlexJob</string>
+    // Kotlin class
+    <string name="exception_login">Email или пароль неверны</string>
 
     <!--    Register activity   -->
     <string name="have_an_account">Есть аккаунт ?</string>
     <string name="register">Регистрация в FlexJob</string>
     <string name="register_d">Зарегестрироваться</string>
     <string name="regTghr">Регистрация через</string>
+    // Kotlin class
+    <string name="register_successful">Вы успешно зарегестрировались</string>
 
     <!--    Forgot pass activity    -->
     <string name="password_retrieval">Восстановление пароля</string>
-    <string name="text_recover_pass">Введите Ваш электронный адрес, чтобы сбросить пароль</string>
+    <string name="text_recover_pass">Введите ваш email, чтобы сбросить пароль</string>
     <string name="reset_password">Сброс пароля</string>
 
     <!--    Settings Activity-->
@@ -56,13 +83,30 @@
     <string name="Help">Помощь</string>
     <string name="Ask_que">Задайте вопрос</string>
     <string name="privace_poll">Политика безопасности</string>
-    <string name="exit">Выйти</string>
-
-
-
-
-
+    <string name="logOut">Выйти</string>
+    // Kotlin class
+    <string name="sure_change_pass">Вы уверены, что хотите поменять пароль ?</string>
+    <string name="Sure_delete_acc">Вы уверены, что хотите удалить аккаунт ?</string>
+    <string name="Sure_exit_acc">Вы уверены, что хотите вйыти из своей учетной записи ?</string>
 
     <!--    SCROLL BAR  -->
     <string name="loader">Грузчик</string>
+
+    <!--    Positive and Negative Buttons - Alert Dialog    -->
+    <string name="YesPositive">Да</string>
+    <string name="NoNegative">Нет</string>
+
+    <!--    Change Password Activity     -->
+    <string name="text_old_password">Введите старый пароль</string>
+    <string name="text_new_password">Введите новый пароль</string>
+    // Kotlin
+    <string name="pass_update">Пароль успешно обновлен</string>
+
+    <!--    Change Email Activity    -->
+    <string name="change_email">Изменить email</string>
+    <string name="text_old_email">Введите старый email</string>
+    <string name="text_new_email">Введите новый email</string>
+    // Kotlin
+    <string name="email_update">Email успешно обновлен</string>
+
 </resources>

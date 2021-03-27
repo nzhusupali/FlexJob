@@ -31,12 +31,9 @@
 
         <TextView
             android:id="@+id/text_login_forget_pass_activity"
-            style="@style/Text_login_activity"
-            android:layout_width="234dp"
-            android:layout_height="38dp"
+            style="@style/Text_ChangePass_Dell_activity"
             android:layout_marginTop="140dp"
             android:text="@string/text_delete_acc"
-            android:textSize="@dimen/small_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

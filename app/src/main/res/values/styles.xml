@@ -78,7 +78,14 @@
         <item name="fontFamily">@font/futura_light</item>
         <item name="android:textColor">@color/BlackColor</item>
         <item name="android:textSize">@dimen/large_text</item>
+    </style>
 
+    <style name="Text_ChangePass_Dell_activity">
+        <item name="android:layout_width">234dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/futura_light</item>
+        <item name="android:textColor">@color/BlackColor</item>
+        <item name="android:textSize">@dimen/small_text</item>
     </style>
 
     <style name="Text_settings_activity">

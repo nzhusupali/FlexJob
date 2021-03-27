@@ -1,4 +1,5 @@
-package com.example.flexJob
+
+ package com.example.flexJob
 
 import android.content.Intent
 import android.os.Bundle
@@ -17,14 +18,17 @@ class ForgetPassActivity : AppCompatActivity() {
         setContentView(R.layout.forget_pass_activity)
 
         BTN_reset_pass_forget_pass_activity.setOnClickListener {
+            val emailReq : String = resources.getString(R.string.email_req)
+            val validEmailReq : String = resources.getString(R.string.valid_email_req)
+
             val email = ET_email_forget_pass_activity.text.toString().trim()
             if (email.isEmpty()) {
-                ET_email_forget_pass_activity.error = "Email Required"
+                ET_email_forget_pass_activity.error = emailReq
                 ET_email_forget_pass_activity.requestFocus()
                 return@setOnClickListener
             }
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                ET_email_forget_pass_activity.error = "Valid Email Required"
+                ET_email_forget_pass_activity.error = validEmailReq
                 ET_email_forget_pass_activity.requestFocus()
                 return@setOnClickListener
             }
@@ -36,11 +40,13 @@ class ForgetPassActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         Toast.makeText(
                             this@ForgetPassActivity,
-                            "Check your email",
+                            R.string.Check_email,
                             Toast.LENGTH_LONG
 
                         ).show()
-                        startActivity(Intent(this@ForgetPassActivity,LoginActivity::class.java))
+                        startActivity(Intent(this@ForgetPassActivity, LoginActivity::class.java))
+                        Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                        finish()
                     } else {
                         Toast.makeText(
                             this@ForgetPassActivity,

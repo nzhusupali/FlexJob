@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
-    tools:context=".ForgetPassActivity">
+    tools:context=".ChangeEmailActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="277dp"
@@ -23,52 +23,70 @@
         <TextView
             style="@style/headWords"
             android:layout_marginTop="60dp"
-            android:text="@string/password_retrieval"
+            android:text="@string/change_email"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/text_login_forget_pass_activity"
-            style="@style/Text_login_activity"
-            android:layout_width="234dp"
-            android:layout_height="38dp"
+            android:id="@+id/text_oldEmail_change_email_activity"
+            style="@style/Text_ChangePass_Dell_activity"
             android:layout_marginTop="140dp"
-            android:text="@string/text_recover_pass"
-            android:textSize="@dimen/small_text"
+            android:text="@string/text_old_email"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/ET_email_forget_pass_activity"
+            android:id="@+id/ET_oldLogin_change_email_activity"
             style="@style/ET_login_activity"
             android:layout_marginTop="3dp"
-            android:hint="@string/login_example3"
-            android:importantForAutofill="no"
-            android:drawableStart="@drawable/ic_password"
+            android:drawableStart="@drawable/ic_person_"
             android:drawablePadding="@dimen/padding_icon_ET"
+            android:hint="@string/login_example2"
+            android:importantForAutofill="no"
             android:inputType="textEmailAddress"
-            android:focusable="true"
-            android:clickable="true"
-            android:focusableInTouchMode="true"
-            android:labelFor="@+id/text_login_forget_pass_activity"
+            android:labelFor="@+id/text_oldEmail_change_email_activity"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_login_forget_pass_activity" />
+            app:layout_constraintTop_toBottomOf="@+id/text_oldEmail_change_email_activity" />
+
+
+        <TextView
+            android:id="@+id/text_newEmail_change_email_activity"
+            style="@style/Text_ChangePass_Dell_activity"
+            android:layout_marginTop="220dp"
+            android:text="@string/text_new_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/ET_newEmail_change_email_activity"
+            style="@style/ET_login_activity"
+            android:drawableStart="@drawable/ic_person_"
+            android:drawablePadding="@dimen/padding_icon_ET"
+            android:hint="@string/login_example"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="yes"
+            android:labelFor="@+id/text_newEmail_change_email_activity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_newEmail_change_email_activity"
+            android:autofillHints="@string/password" />
 
         <Button
-            android:id="@+id/BTN_reset_pass_forget_pass_activity"
+            android:id="@+id/BTN_change_email_activity"
             style="@style/ButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/reset_password"
+            android:layout_marginBottom="112dp"
+            android:text="@string/change_email"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ET_email_forget_pass_activity"
-            app:layout_constraintVertical_bias="0.62" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ProgressBar
             android:id="@+id/progressbar"

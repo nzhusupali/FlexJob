@@ -35,28 +35,25 @@ class LoginActivity : AppCompatActivity() {
         text_forgetPass_activity_login.setOnClickListener {
             startActivity(Intent(this@LoginActivity, ForgetPassActivity::class.java))
         }
-        BTN_login_activity_login.setOnClickListener {
-            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
-        }
         text_HaveAcc_activity_login.setOnClickListener {
             startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
         }
         BTN_login_activity_login.setOnClickListener {
+            val enterEmail : String = resources.getString(R.string.enter_email)
+            val enterPassword : String = resources.getString(R.string.enter_password)
+            val validEmailPassword : String = resources.getString(R.string.exception_login)
+
             when {
                 TextUtils.isEmpty(ET_login_activity_login.text.toString().trim { it <= ' ' }) -> {
-                    Toast.makeText(
-                        this@LoginActivity,
-                        "Please enter email",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    ET_login_activity_login.error = enterEmail
+                    ET_login_activity_login.requestFocus()
+                    return@setOnClickListener
                 }
                 TextUtils.isEmpty(
                     ET_password_activity_login.text.toString().trim { it <= ' ' }) -> {
-                    Toast.makeText(
-                        this@LoginActivity,
-                        "Please enter password",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    ET_password_activity_login.error = enterPassword
+                    ET_password_activity_login.requestFocus()
+                    return@setOnClickListener
                 }
                 else -> {
                     val email: String = ET_login_activity_login.text.toString().trim { it <= ' ' }
@@ -73,7 +70,7 @@ class LoginActivity : AppCompatActivity() {
 //                                val firebaseUser: FirebaseUser = task.result!!.user!!
                                 Toast.makeText(
                                     this@LoginActivity,
-                                    "You log in is successfull",
+                                    R.string.Login_successful,
                                     Toast.LENGTH_SHORT
                                 ).show()
 //                              if all operation successfully, going to MainActivty
@@ -93,6 +90,10 @@ class LoginActivity : AppCompatActivity() {
                                         Toast.LENGTH_SHORT
                                     ).show()
                                 }
+                            }   else {
+                                ET_login_activity_login.error = validEmailPassword
+                                ET_login_activity_login.requestFocus()
+                                return@addOnCompleteListener
                             }
                         }
                 }
@@ -122,7 +123,7 @@ class LoginActivity : AppCompatActivity() {
         /**
          *  There start Facebook auth firebase*/
         callBackManager = CallbackManager.Factory.create()
-        Sign_facebook_register_activity.setReadPermissions("email")
+        Sign_facebook_register_activity.setReadPermissions(R.string.e_mail.toString())
         Sign_facebook_register_activity.setOnClickListener {
             signin()
         }
@@ -217,7 +218,7 @@ class LoginActivity : AppCompatActivity() {
             .addOnSuccessListener { result ->
                 // get the email
                 val email = result.user?.email
-                Toast.makeText(this, "You logged in with " + email, Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "You logged in with $email", Toast.LENGTH_LONG).show()
             }
             .addOnFailureListener { e ->
                 Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()

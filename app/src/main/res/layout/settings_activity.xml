@@ -22,14 +22,14 @@
             app:layout_constraintVertical_bias="0.496" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/circleImageView"
+            android:id="@+id/user_photo"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="6dp"
+            android:src="@drawable/ic_person_"
             android:layout_marginEnd="291dp"
             android:layout_marginBottom="784dp"
-            android:src="@drawable/ic_cook"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +77,7 @@
 
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/editProfile"
                 style="@style/Text_settings_activity"
                 android:layout_width="321dp"
                 android:layout_marginStart="65dp"
@@ -92,7 +92,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/BTN_change_password_settings_activity"
                 style="@style/Text_settings_activity"
                 android:layout_width="321dp"
                 android:layout_marginStart="65dp"
@@ -267,7 +267,7 @@
                 android:layout_marginEnd="161dp"
                 android:layout_marginBottom="112dp"
                 android:background="@color/WhiteColor"
-                android:text="@string/exit"
+                android:text="@string/logOut"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
