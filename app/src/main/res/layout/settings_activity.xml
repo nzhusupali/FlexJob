@@ -151,7 +151,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/notification"
                 style="@style/Text_settings_activity"
                 android:layout_width="325dp"
                 android:layout_marginStart="65dp"
@@ -164,7 +164,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/darkTheme"
                 style="@style/Text_settings_activity"
                 android:layout_width="326dp"
                 android:layout_marginStart="65dp"
@@ -178,7 +178,7 @@
                 app:layout_constraintVertical_bias="1.0" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/language"
                 style="@style/Text_settings_activity"
                 android:layout_width="327dp"
                 android:layout_marginStart="65dp"

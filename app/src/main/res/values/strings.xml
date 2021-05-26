@@ -126,7 +126,5 @@
     <string name="fb_login_protocol_scheme" translatable="false">fb175463684151031</string>
     <string name="logo" translatable="false">Logo</string>
     <string name="next_button" translatable="false">next Button</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "749884958913",
+    "firebase_url": "https://project-work-96db8-default-rtdb.firebaseio.com",
     "project_id": "project-work-96db8",
     "storage_bucket": "project-work-96db8.appspot.com"
   },
@@ -21,6 +22,35 @@
             "certificate_hash": "8f06147a504f78b9f0556d0037a380fa40f49d64"
           }
         },
+        {
+          "client_id": "749884958913-3ouabkc9oe0iodpulvh90nj35f64uhq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo-z_u3D2NqaezSxG_icqdp81GDn5_Zj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749884958913-3ouabkc9oe0iodpulvh90nj35f64uhq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749884958913:android:341f48db397d731cc04c40",
+        "android_client_info": {
+          "package_name": "com.example.flexJob"
+        }
+      },
+      "oauth_client": [
         {
           "client_id": "749884958913-3ouabkc9oe0iodpulvh90nj35f64uhq7.apps.googleusercontent.com",
           "client_type": 3

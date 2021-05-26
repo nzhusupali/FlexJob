@@ -5,14 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.flexJob.R
-import kotlinx.android.synthetic.main.find_job_fragment.*
+import com.example.flexJob.databinding.FindJobFragmentBinding
 
 class FindJobFragment : Fragment() {
+    private var binding : FindJobFragmentBinding? = null
+    private val _binding get() = binding!!
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let{
-            login.setOnClickListener {
+            _binding.login.setOnClickListener {
 
             }
         }
@@ -21,13 +23,14 @@ class FindJobFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.find_job_fragment, container, false)
-
+        binding = FindJobFragmentBinding.inflate(inflater,container,false)
+        return _binding.root
     }
 
-
-
-
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
+    }
 }

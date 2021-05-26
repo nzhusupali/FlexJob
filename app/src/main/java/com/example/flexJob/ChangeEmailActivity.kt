@@ -1,22 +1,32 @@
 package com.example.flexJob
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.example.flexJob.databinding.ChangeEmailActivityBinding
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.change_email_activity.*
 
 class ChangeEmailActivity : AppCompatActivity() {
+    private lateinit var _binding: ChangeEmailActivityBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.change_email_activity)
-        BTN_change_email_activity.setOnClickListener {
+
+        _binding = ChangeEmailActivityBinding.inflate(layoutInflater)
+        setContentView(_binding.root)
+
+        val emailActivity = _binding.BTNChangeEmailActivity
+        val oldEmail = _binding.ETOldLoginChangeEmailActivity
+        val newEmail = _binding.ETNewEmailChangeEmailActivity
+
+
+        emailActivity.setOnClickListener {
             when {
                 TextUtils.isEmpty(
-                    ET_oldLogin_change_email_activity.text.toString().trim { it <= ' ' }) -> {
+                    oldEmail.text.toString().trim { it <= ' ' }) -> {
                     Toast.makeText(
                         this,
                         R.string.text_old_email,
@@ -24,7 +34,7 @@ class ChangeEmailActivity : AppCompatActivity() {
                     ).show()
                 }
                 TextUtils.isEmpty(
-                    ET_newEmail_change_email_activity.text.toString().trim { it <= ' ' }) -> {
+                    newEmail.text.toString().trim { it <= ' ' }) -> {
                     Toast.makeText(
                         this,
                         R.string.text_new_email,
@@ -34,7 +44,7 @@ class ChangeEmailActivity : AppCompatActivity() {
                 else -> {
                     val user = Firebase.auth.currentUser
                     val newEmail: String =
-                        ET_newEmail_change_email_activity.text.toString().trim { it <= ' ' }
+                        newEmail.text.toString().trim { it <= ' ' }
                     user!!.updateEmail(newEmail)
                         .addOnCompleteListener { task ->
                             if (task.isSuccessful) {

@@ -1,5 +1,4 @@
-
- package com.example.flexJob
+package com.example.flexJob
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,36 +6,41 @@ import android.util.Patterns
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.flexJob.databinding.ForgetPassActivityBinding
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.forget_pass_activity.*
 
 
 class ForgetPassActivity : AppCompatActivity() {
-
+    private lateinit var _binding: ForgetPassActivityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        _binding = ForgetPassActivityBinding.inflate(layoutInflater)
         setContentView(R.layout.forget_pass_activity)
 
-        BTN_reset_pass_forget_pass_activity.setOnClickListener {
-            val emailReq : String = resources.getString(R.string.email_req)
-            val validEmailReq : String = resources.getString(R.string.valid_email_req)
+        val resetPassword = _binding.BTNResetPassForgetPassActivity
+        val etForgetPassword = _binding.ETEmailForgetPassActivity
+        val progressBar = _binding.progressbar
 
-            val email = ET_email_forget_pass_activity.text.toString().trim()
+        resetPassword.setOnClickListener {
+            val emailReq: String = resources.getString(R.string.email_req)
+            val validEmailReq: String = resources.getString(R.string.valid_email_req)
+
+            val email = etForgetPassword.text.toString().trim()
             if (email.isEmpty()) {
-                ET_email_forget_pass_activity.error = emailReq
-                ET_email_forget_pass_activity.requestFocus()
+                etForgetPassword.error = emailReq
+                etForgetPassword.requestFocus()
                 return@setOnClickListener
             }
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                ET_email_forget_pass_activity.error = validEmailReq
-                ET_email_forget_pass_activity.requestFocus()
+                etForgetPassword.error = validEmailReq
+                etForgetPassword.requestFocus()
                 return@setOnClickListener
             }
-            progressbar.visibility = View.VISIBLE
+            progressBar.visibility = View.VISIBLE
             FirebaseAuth.getInstance()
                 .sendPasswordResetEmail(email)
                 .addOnCompleteListener { task ->
-                    progressbar.visibility = View.GONE
+                    progressBar.visibility = View.GONE
                     if (task.isSuccessful) {
                         Toast.makeText(
                             this@ForgetPassActivity,

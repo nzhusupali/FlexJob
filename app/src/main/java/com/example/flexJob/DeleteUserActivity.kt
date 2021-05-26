@@ -4,20 +4,24 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.flexJob.databinding.DeleteUserActivityBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.delete_user_activity.*
 
 class DeleteUserActivity : AppCompatActivity() {
-
+    private lateinit var _binding: DeleteUserActivityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.delete_user_activity)
+        _binding = DeleteUserActivityBinding.inflate(layoutInflater)
+        setContentView(_binding.root)
 
-        BTN_delete_account_activity.setOnClickListener {
+        val deleteAccount = _binding.BTNDeleteAccountActivity
+        val deleteET = _binding.ETDeleteUserActivity
+
+        deleteAccount.setOnClickListener {
             lateinit var mGoogleSignInClient: GoogleSignInClient
 
             val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -28,13 +32,13 @@ class DeleteUserActivity : AppCompatActivity() {
 
             val tag = "delete_user_activity"
             val user = Firebase.auth.currentUser!!
-            val enterEmail : String = resources.getString(R.string.enter_email)
-            val errorServer : String = resources.getString(R.string.Error_server)
+            val enterEmail: String = resources.getString(R.string.enter_email)
+            val errorServer: String = resources.getString(R.string.Error_server)
 
-            val email = ET_delete_user_activity.toString().trim()
+            val email = deleteET.toString().trim()
             if (email.isEmpty()) {
-                ET_delete_user_activity.error = enterEmail
-                ET_delete_user_activity.requestFocus()
+                deleteET.error = enterEmail
+                deleteET.requestFocus()
                 return@setOnClickListener
             }
 
@@ -62,11 +66,5 @@ class DeleteUserActivity : AppCompatActivity() {
                     }
                 }
         }
-    }
-
-
-    private fun deleteUer() {
-        setContentView(R.layout.delete_user_activity)
-
     }
 }
